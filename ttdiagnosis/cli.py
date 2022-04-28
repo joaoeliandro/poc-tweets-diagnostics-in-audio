@@ -1,2 +1,2 @@
-def __main__():
+def init():
     return 'initializing...'
