@@ -1,1 +1,2 @@
-print('Initializing...')
+def __main__():
+    return 'initializing...'
