@@ -1,2 +1,2 @@
-def init():
+def init_cli():
     return 'initializing...'
