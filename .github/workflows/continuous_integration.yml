@@ -30,7 +30,7 @@ jobs:
         run: poetry install --no-interaction
 
       - name: Lint
-        run: poetry run make lint
+        run: make lint
 
       - name: Run tests
-        run: poetry run make test
+        run: make test
