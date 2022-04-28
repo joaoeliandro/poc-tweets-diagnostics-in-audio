@@ -4,6 +4,7 @@ jobs:
   lint_and_test:
     runs-on: ubuntu-latest
     steps:
+    
       - name: Set up python
         uses: actions/setup-python@v2
         with:
@@ -26,6 +27,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction
 
       - name: Lint
         run: poetry run make lint
