@@ -10,7 +10,7 @@ format:
 lint:
 	@poetry run blue . --check
 	@poetry run isort . --check
-	@poetry run prospector --with-tool pydocstyle --doc-warning
+	@poetry run prospector --with-tool pydocstyle --doc-warning --no-autodetect
 	
 test:
 	@poetry run pytest -v
