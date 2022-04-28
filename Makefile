@@ -1,4 +1,4 @@
-.PHONY: install format lint test sec
+.PHONY: install format lint test sec docs
 
 install:
 	@poetry install
@@ -17,3 +17,6 @@ test:
 
 sec:
 	@poetry run pip-audit
+
+docs:
+	@poetry run mkdocs serve
