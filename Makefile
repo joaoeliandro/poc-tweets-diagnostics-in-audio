@@ -1,4 +1,4 @@
-.PHONY: install format lint test sec docs
+.PHONY: install format lint test sec docs main
 
 install:
 	@poetry install
@@ -20,3 +20,6 @@ sec:
 
 docs:
 	@poetry run mkdocs serve
+
+main:
+	@python ttdiagnosis/main.py -$(arg)
