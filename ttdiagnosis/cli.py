@@ -5,6 +5,7 @@ class TTDiagnosisCLI:
     CLI_VERSION = 'TTDiagnosis 1.0.0'
 
     def __init__(self):
+        """Docstring."""
         self.__run()
 
     def __run(self):
