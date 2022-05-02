@@ -188,4 +188,7 @@ cython_debug/
 # Ignore code-workspaces
 *.code-workspace
 
+# Ignore sqlite test.db
+test.db
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
